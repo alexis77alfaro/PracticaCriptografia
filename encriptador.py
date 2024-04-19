@@ -54,7 +54,8 @@ class encriptador:
             return encriptador._encriptar(numero,diferencia12)
         if alg == "multiplicar":
             return encriptador._encriptar(numero,multiplicar6)
-    
+        raise Exception('El algoritmo no existe, por favor ingrese los nombres xor, multiplicar,diferencia')
+
     @staticmethod
     def desencriptar(numero,alg):
         if alg == "xor":
@@ -63,4 +64,5 @@ class encriptador:
             return encriptador._desencriptar(numero,diferencia12)
         if alg == "multiplicar":
             return encriptador._desencriptar(numero,multiplicar6)
+        raise Exception('El algoritmo no existe, por favor ingrese los nombres xor, multiplicar,diferencia')
 
