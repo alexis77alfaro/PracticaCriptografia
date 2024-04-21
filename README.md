@@ -11,3 +11,9 @@ Argumentos
 ```
  python main.py -f cifrar -n 9  -a multiplicar
 ```
+
+## Integrantes:
+- Gerardo Andrés Castro Lemus CL240010
+- Gabriela Cecilia Salguero Moreno SM240011
+- Edelnison Alexander Guevara Alfaro GA242605
+- Gustavo Israel Martínez Laug ML240012
