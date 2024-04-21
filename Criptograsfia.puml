@@ -1,0 +1,40 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class AlgoritmoEncriptamiento {
+    +encrip(numero: int): int
+    +decrip(numero: int): int
+}
+
+class Multiplicar6 {
+    +encrip(numero: int): int
+    +decrip(numero: int): int
+}
+
+class Diferencia12 {
+    +encrip(numero: int): int
+    +decrip(numero: int): int
+}
+
+class Xor10 {
+    +encrip(numero: int): int
+    +decrip(numero: int): int
+}
+
+class Encriptador {
+    -_encriptar(numero: int, algoritmo: AlgoritmoEncriptamiento): int
+    -_desencriptar(numero: int, algoritmo: AlgoritmoEncriptamiento): int
+    +encriptar(numero: int, alg: string): int
+    +desencriptar(numero: int, alg: string): int
+}
+
+Encriptador --> AlgoritmoEncriptamiento : usa
+Encriptador --> Multiplicar6 : usa
+Encriptador --> Diferencia12 : usa
+Encriptador --> Xor10 : usa
+
+Multiplicar6 --|> AlgoritmoEncriptamiento : hereda
+Diferencia12 --|> AlgoritmoEncriptamiento : hereda
+Xor10 --|> AlgoritmoEncriptamiento : hereda
+
+@enduml
